@@ -104,13 +104,13 @@ func main() {
  * 
  
  Input: 
- {"person":{"BirthDate":"1999-02-03T00:00:00","ID":"12","JoinDate":"2020-11-24T12:34:56.123000Z","Name":"Alex","RandomString":"APKZYKSv2","age":"25","creditScore":["700","250","340"],"salary":"45.23"}} 
+ [map[person:map[BirthDate:1990-02-25 11:06:39 +0000 PST FirstName:Mary ID:12 LastName:John Local:true age:25 creditScore:[700 250 340] salary:4500.2351]]] 
 
 Fetch Document as JSON string: 
- {"person":{"BirthDate":"1999-02-03T00:00:00","ID":"12","JoinDate":"2020-11-24T12:34:56.123000Z","Name":"Alex","RandomString":"APKZYKSv2","age":"25","creditScore":["700","250","340"],"salary":"45.23"}} 
+ [{"person":{"BirthDate":"1990-02-25T11:06:39Z","FirstName":"Mary","ID":"12","LastName":"John","Local":true,"age":"25","creditScore":["700","250","340"],"salary":"4500.2351"}}] 
 
-Fetch Document back to Go type:
- map[person:map[BirthDate:1999-02-03T00:00:00 ID:12 JoinDate:2020-11-24T12:34:56.123000Z Name:Alex RandomString:APKZYKSv2 age:25 creditScore:[700 250 340] salary:45.23]] 
- 
+Fetch Document back to Go type: 
+ [map[person:map[BirthDate:1990-02-25 11:06:39 +0000 UTC FirstName:Mary ID:12 LastName:John Local:true age:25 creditScore:[700 250 340] salary:4500.2351]]] 
+  
  */
  
