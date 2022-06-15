@@ -80,3 +80,18 @@ func main() {
 		fmt.Printf("Fetch Document back to Go type:\n %v \n\n", gotmap)
 	}
 }
+
+/* 
+ * Output
+ * 
+ 
+ Input: 
+ {"person":{"BirthDate":"1999-02-03T00:00:00","ID":"12","JoinDate":"2020-11-24T12:34:56.123000Z","Name":"Alex","RandomString":"APKZYKSv2","age":"25","creditScore":["700","250","340"],"salary":"45.23"}} 
+
+Fetch Document as JSON string: 
+ {"person":{"BirthDate":"1999-02-03T00:00:00","ID":"12","JoinDate":"2020-11-24T12:34:56.123000Z","Name":"Alex","RandomString":"APKZYKSv2","age":"25","creditScore":["700","250","340"],"salary":"45.23"}} 
+
+Fetch Document back to Go type:
+ map[person:map[BirthDate:1999-02-03T00:00:00 ID:12 JoinDate:2020-11-24T12:34:56.123000Z Name:Alex RandomString:APKZYKSv2 age:25 creditScore:[700 250 340] salary:45.23]] 
+  
+ */
