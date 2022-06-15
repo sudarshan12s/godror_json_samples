@@ -91,3 +91,18 @@ func main() {
 		fmt.Printf("Fetch Document back to Go type: \n %v \n\n", gotmap)
 	}
 }
+
+/* 
+ * Output
+ * 
+ 
+ Input: 
+ map[person:map[BinData:[0 1 2 3 4] BirthDate:1990-02-25 11:06:39 +0000 PST FirstName:Mary ID:12 LastName:John Local:true TravelTimePerDay:5h21m0.01000002s age:25 creditScore:[700 250 340] salary:45.23]] 
+
+Fetch Document as JSON string: 
+ {"person":{"BinData":"AAECAwQ=","BirthDate":"1990-02-25T11:06:39Z","FirstName":"Mary","ID":"12","LastName":"John","Local":true,"TravelTimePerDay":19260010000020,"age":"25","creditScore":["700","250","340"],"salary":"45.23"}} 
+
+Fetch Document back to Go type: 
+ map[person:map[BinData:[0 1 2 3 4] BirthDate:1990-02-25 11:06:39 +0000 UTC FirstName:Mary ID:12 LastName:John Local:true TravelTimePerDay:5h21m0.01000002s age:25 creditScore:[700 250 340] salary:45.23]] 
+   
+ */
